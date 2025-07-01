@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini 学术助手",
+  "version": "1.0",
+  "description": "为 Gemini 添加一个带有预设学术提示的浮动按钮。",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {}
+}
