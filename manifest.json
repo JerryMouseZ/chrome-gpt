@@ -1,14 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Gemini 学术助手",
-  "version": "1.0",
-  "description": "为 Gemini 添加一个带有预设学术提示的浮动按钮。",
+  "name": "AI 学术助手",
+  "version": "1.1",
+  "description": "为大语言模型网站添加一个带有预设学术提示的浮动按钮。",
   "permissions": [
     "storage"
   ],
   "content_scripts": [
     {
-      "matches": ["https://gemini.google.com/*"],
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://chatgpt.com/*",
+        "https://www.blackbox.ai/*",
+        "https://grok.com/*",
+        "https://aistudio.google.com/*",
+        "https://claude.ai/*",
+        "https://x.com/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
